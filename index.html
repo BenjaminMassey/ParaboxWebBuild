@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | CIS410GameMessingAround</title>
+    <title>Unity WebGL Player | Parabox</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -12,18 +12,22 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
-	<p>
-	WASD to move, left-click to pickup, right-click to freeze, R to reverse time, G to reset level <br>
-	Note: freezing not in level 1 (for build on 4/29/2020) <br>
-	</p>
-	<div class="webgl-content">
+  
+  <div class="webgl-content">
 	  <div id="unityContainer" style="width: 960px; height: 600px"></div>
 	  <div class="footer">
 		<div class="webgl-logo"></div>
 		<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-		<div class="title">CIS410GameMessingAround</div>
+		<div class="title">Parabox</div>
 	  </div>
+  </div>
+  
+  <body>
+	<div>
+	  <p>
+	    WASD to move, left-click to pickup, right-click to freeze, R to reverse time, G to reset level <br>
+	    Note: freezing not in level 1 (for build on 4/29/2020) <br>
+	  </p>
 	</div>
   </body>
 </html>
