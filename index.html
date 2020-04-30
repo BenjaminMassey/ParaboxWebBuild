@@ -12,22 +12,15 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
-  
-  <div class="webgl-content">
-	  <div id="unityContainer" style="width: 960px; height: 600px"></div>
-	  <div class="footer">
-		<div class="webgl-logo"></div>
-		<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-		<div class="title">Parabox</div>
+  <body>
+    Note: freezing not in level 1 (for build on 4/29/2020)
+    <div class="webgl-content">
+	    <div id="unityContainer" style="width: 960px; height: 600px"></div>
+	    <div class="footer">
+	  	<div class="webgl-logo"></div>
+	  	<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+		<div class="title">Parabox: WASD to move, left-click to pickup, right-click to freeze, R to reverse time, F to speed up reverse, G to reset level</div>
 	  </div>
   </div>
-  
-  <body>
-	<div>
-	  <p>
-	    WASD to move, left-click to pickup, right-click to freeze, R to reverse time, F to speed up reverse, G to reset level <br>
-	    Note: freezing not in level 1 (for build on 4/29/2020) <br>
-	  </p>
-	</div>
   </body>
 </html>
